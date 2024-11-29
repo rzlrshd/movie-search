@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex; /* Use flexbox for the body */
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; /* Ensure the body takes at least full viewport height */
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.header-content {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#hero {
+    position: relative; /* Keep this to position the image absolutely within it */
+    min-height: 400px; /* Set a minimum height for the hero section */
+    overflow: hidden; /* Ensure content doesn't overflow */
+    text-align: center; /* Center the text */
+    color: white; /* Change text color for better visibility */
+    flex: 1; /* Allow the hero section to grow and fill available space */
+}
+
+.hero-image {
+    position: absolute; /* Position the image absolutely */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Make the image cover the width of the container */
+    height: 100%; /* Make the image cover the height of the container */
+    object-fit: cover; /* Ensure the image covers the area without stretching */
+    z-index: 0; /* Keep it behind other elements */
+}
+
+.hero-content {
+    position: relative; /* This ensures the content is positioned normally */
+    z-index: 1; /* Keep the content above the image */
+    padding: 20px; /* Add some padding for better spacing */
+    color: black;
+}
+
+.search-box {
+    display: inline-block; /* Make the box fit the content */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for the box */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside the box */
+    margin-top: 20px; /* Space above the search box */
+}
+
+.search-box input {
+    border: 1px solid #ccc; /* Border for the input */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside the input */
+    width: 200px; /* Fixed width for the input */
+}
+
+.search-box button {
+    background-color: #333; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding for the button */
+} /* Closing bracket added here */
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: white;
+}
